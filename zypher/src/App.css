@@ -30,3 +30,83 @@
     transform: rotate(360deg);
   }
 }
+
+.process{
+  display: inline-flex;
+  width: 50vw;
+  justify-content: space-between;
+  position: relative;
+}
+.process .processPercent{
+  position: absolute;
+  background-color: #eeeeee;
+  height: 5px;
+  width: 100%;
+  top: 17px;
+}
+.process li{
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  line-height: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+.process .iconHead{
+  
+  position: absolute;
+  bottom: -14px;
+  line-height: 1;
+  left: 0;
+  width: 40px;
+}
+.process .material-icons{
+  line-height: 40px !important;
+}
+
+.userDet .collection-item{
+  text-align: left;
+}
+.userDet .userAva{
+  background-image: url("https://ath.unileverservices.com/wp-content/uploads/sites/3/2016/07/brown-hair-beard-683x1024.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+}
+
+.userDet .collection-item.avatar{
+  padding-left: 84px;
+}
+
+.userAddress{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+}
+.userAddress .userHomeIcon{
+  position: absolute;
+  top: -20px;
+  left: 48%;
+  width: 40px;
+  border-radius: 20px;
+}
+.userAddress h3{
+  margin: 10px;
+}
+.userAddress p{
+  margin: 5px;
+}
+.userHomeIcon .material-icons{
+  line-height: 40px !important;
+}
+.deliveryLoc{
+  padding: 30px;
+}
