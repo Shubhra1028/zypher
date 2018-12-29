@@ -5,13 +5,15 @@ class Dashboard extends Component{
     state={
 
     }
-
     componentWillMount(){
         const Url = "https://test-zypher.herokuapp.com/orders/getOrderDetails"
         const req = { "orderId" : "5c1a9b66b269441f4b217d5d" }
 
         axios.post(Url, req).then((response)=>{
-            console.log(response)
+            this.setState({
+                data : response.data
+            })
+            console.log(this.state)
         })
     }
 
@@ -23,9 +25,9 @@ class Dashboard extends Component{
                 </div>
                 <ul className="process">
                     <li className="processPercent"></li>
-                    <li><i className="material-icons">add_shopping_cart</i><span className="iconHead" >hello</span></li>
-                    <li><i className="material-icons">local_shipping</i><span className="iconHead" >hello</span></li>
-                    <li><i className="material-icons">done_all</i><span className="iconHead" >hello</span></li>
+                    <li><i className="material-icons">add_shopping_cart</i><span className="iconHead" >PLaced</span></li>
+                    <li><i className="material-icons">local_shipping</i><span className="iconHead" >Shipped</span></li>
+                    <li><i className="material-icons">done_all</i><span className="iconHead" >Delivered</span></li>
                 </ul>
                 <h3>DETAILS</h3>
                 <div className="detBox grey lighten-4">
