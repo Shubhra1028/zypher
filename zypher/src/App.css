@@ -90,6 +90,7 @@
   padding: 20px;
   position: relative;
   margin-top: 40px;
+  box-shadow: 0px 7px 20px 0 rgba(46,61,73,.15);
 }
 .userAddress .userHomeIcon{
   position: absolute;
@@ -97,6 +98,7 @@
   left: 48%;
   width: 40px;
   border-radius: 20px;
+  box-shadow: 0px 3px 20px 3px rgba(239, 181, 97, 0.32);
 }
 .userAddress h3{
   margin: 10px;
@@ -109,4 +111,38 @@
 }
 .deliveryLoc{
   padding: 30px;
+}
+
+.detBox{
+  padding: 30px;
+  text-align: left
+}
+
+.detBox >div{
+  width: 80%;
+  min-width: 550px;
+  margin: 0 auto;
+  border-left: 3px dashed cadetblue;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.detBox i{
+  position: absolute;
+  top: -2px;
+  left: -18px;
+  color: #1c5d5f;
+  font-size: 35px;
+}
+.detBox p{
+  margin: 0px 0 2px;
+}
+.booksImg{
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(https://thereduxjsbooks.com/images/1000w-redux-trio.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
